@@ -113,3 +113,14 @@ export function validarNumeroPositivo(numero) {
 
   return divisores.sort((a, b) => a - b);
 }
+
+/**
+ * Reto adicional: calcular partidos de un torneo.
+ */
+export function calcularPartidosTorneoSeguro(equipos) {
+  if (!Number.isInteger(equipos) || equipos < 2) {
+    throw new Error("Se necesitan al menos 2 equipos.");
+  }
+
+  return (equipos * (equipos - 1)) / 2;
+}
