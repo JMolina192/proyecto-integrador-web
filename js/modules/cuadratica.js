@@ -11,6 +11,9 @@
  * @returns {object} Resultado con clasificacion, discriminante, vertice y raices
  */
 export function resolverCuadratica(a, b, c) {
+    if (![a, b, c].every(Number.isFinite)) {
+    throw new Error("Todos los coeficientes deben ser números válidos.");
+  }
   // -------------------------------------------------------------
   // CASO DEGENERADO: a === 0 (CASCARITA / DESAFIO 2)
   // -------------------------------------------------------------
