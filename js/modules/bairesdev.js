@@ -96,8 +96,11 @@ export function obtenerDivisoresExactos(numero) {
         divisores.push(numero / i);
       }
     }
+  }
 
-    
+  return divisores.sort((a, b) => a - b);
+}
+
 /**
  * Valida que un dato sea un entero positivo.
  */
