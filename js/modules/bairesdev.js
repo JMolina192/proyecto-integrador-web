@@ -73,3 +73,28 @@ export function calcularViajesMinimos(totalItems, capacidadPorViaje) {
   }
   return Math.ceil(totalItems / capacidadPorViaje);
 }
+
+
+/**
+ * Reto 5: Obtener divisores exactos de un numero.
+ * Complejidad temporal: O(raiz de n).
+ */
+export function obtenerDivisoresExactos(numero) {
+  if (!Number.isInteger(numero) || numero <= 0) {
+    throw new Error("Ingrese un numero entero positivo.");
+  }
+
+  const divisores = [];
+
+  for (let i = 1; i <= Math.sqrt(numero); i++) {
+    if (numero % i === 0) {
+      divisores.push(i);
+
+      if (i !== numero / i) {
+        divisores.push(numero / i);
+      }
+    }
+  }
+
+  return divisores.sort((a, b) => a - b);
+}
