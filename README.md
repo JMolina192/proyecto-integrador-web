@@ -41,3 +41,16 @@ Abrir http://localhost:8000 en el navegador.
 - Gestion de Git y Commits: 20 pts
 - Despliegue y UX/UI: 15 pts
 - Sustentacion Presencial: 15 pts
+
+
+## 7. Objetivo General
+
+Desarrollar una aplicación web interactiva que integre herramientas matemáticas y lógicas para resolver problemas, calcular ecuaciones cuadráticas, analizar sucesiones y ejecutar pruebas automatizadas.
+
+## 8. Tecnologías Utilizadas
+
+- HTML5 para la estructura.
+- CSS3 para el diseño responsivo.
+- JavaScript ES6+ para la lógica matemática y las interacciones.
+- Git y GitHub para el control de versiones.
+- GitHub Pages para publicar la aplicación.
