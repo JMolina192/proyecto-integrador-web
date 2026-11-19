@@ -73,3 +73,18 @@ El proyecto se ejecuta directamente en el navegador y utiliza HTML, CSS y JavaSc
 - `css/style.css`: estilos de la aplicación.
 - `js/app.js`: lógica principal e interacción.
 - `js/modules/`: módulos de cálculos, sucesiones y pruebas automatizadas.
+
+  ## 9. Complejidad temporal y espacial
+
+| Módulo / Función | Complejidad temporal | Complejidad espacial |
+|---|---|---|
+| Módulo A: Probabilidad de dados | O(1) | O(1) |
+| Módulo A: Partidos de torneo | O(1) | O(1) |
+| Módulo A: Contar múltiplos | O(1) | O(1) |
+| Módulo A: Viajes mínimos | O(1) | O(1) |
+| Módulo A: Obtener divisores | O(√n log n) | O(√n) |
+| Módulo B: Resolver ecuación cuadrática | O(1) | O(1) |
+| Módulo C: Analizar secuencias | O(n) | O(n) |
+| Módulo D: Suite de pruebas | O(1) | O(1) |
+
+Donde **n** representa el número de términos de la secuencia o el número evaluado para obtener divisores, según corresponda.
