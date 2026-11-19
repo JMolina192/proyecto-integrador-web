@@ -41,10 +41,12 @@ export function calcularProbabilidadDados(sumaObjetivo) {
  * @param {number} n - Cantidad de equipos (n >= 2)
  * @returns {number}
  */
+
 export function calcularPartidosTorneo(n) {
-  if (n < 2) {
-    throw new Error("Se requieren al menos 2 equipos para jugar un torneo.");
+  if (!Number.isInteger(n) || n < 2) {
+    throw new Error("Se requieren al menos 2 equipos enteros.");
   }
+
   return (n * (n - 1)) / 2;
 }
 
