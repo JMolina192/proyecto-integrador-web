@@ -94,6 +94,21 @@ export function obtenerDivisoresExactos(numero) {
         divisores.push(numero / i);
       }
     }
+
+    
+/**
+ * Valida que un dato sea un entero positivo.
+ */
+export function validarNumeroPositivo(numero) {
+  const valor = Number(numero);
+
+  if (!Number.isInteger(valor) || valor <= 0) {
+    return false;
+  }
+
+  return true;
+}
+
   }
 
   return divisores.sort((a, b) => a - b);
