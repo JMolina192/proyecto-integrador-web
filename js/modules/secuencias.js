@@ -8,11 +8,12 @@
  * @returns {object} Informacion del patron y siguiente valor
  */
 export function analizarSecuencia(arr) {
-    if (!arr.every(Number.isFinite)) {
-    throw new Error("Todos los términos deben ser números válidos.");
-  }
   if (!Array.isArray(arr) || arr.length < 3) {
     throw new Error("Se requieren al menos 3 terminos para detectar un patron.");
+  }
+
+  if (!arr.every(Number.isFinite)) {
+    throw new Error("Todos los términos deben ser números válidos.");
   }
 
   const n = arr.length;
