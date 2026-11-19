@@ -54,3 +54,22 @@ Desarrollar una aplicación web interactiva que integre herramientas matemática
 - JavaScript ES6+ para la lógica matemática y las interacciones.
 - Git y GitHub para el control de versiones.
 - GitHub Pages para publicar la aplicación.
+
+  ## Ejecución local
+
+Para ejecutar el proyecto en un equipo local:
+
+1. Descarga o clona este repositorio.
+2. Abre la carpeta del proyecto en Visual Studio Code.
+3. Instala la extensión **Live Server**.
+4. Abre el archivo `index.html`.
+5. Haz clic derecho y selecciona **Open with Live Server**.
+
+El proyecto se ejecuta directamente en el navegador y utiliza HTML, CSS y JavaScript.
+
+## Estructura del proyecto
+
+- `index.html`: página principal.
+- `css/style.css`: estilos de la aplicación.
+- `js/app.js`: lógica principal e interacción.
+- `js/modules/`: módulos de cálculos, sucesiones y pruebas automatizadas.
