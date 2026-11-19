@@ -359,9 +359,9 @@ function initModuloD() {
     });
 
     if (suite.todosAprobados) {
-      summaryBadges.innerHTML = `<span class="badge-status pass">✔ 10/10 PRUEBAS SUPERADAS (${suite.pasados} PASS)</span>`;
-    } else {
-      summaryBadges.innerHTML = `<span class="badge-status fail">✖ ${suite.fallados} PRUEBA(S) FALLADA(S) • ${suite.pasados}/10 PASS</span>`;
-    }
+  summaryBadges.innerHTML = `<span class="badge-status pass">✔ 10/10 PRUEBAS SUPERADAS (${suite.pasados} PASS) • ${suite.porcentajeAprobado.toFixed(1)}% APROBADO</span>`;
+} else {
+  summaryBadges.innerHTML = `<span class="badge-status fail">✖ ${suite.fallados} PRUEBA(S) FALLADA(S) • ${suite.pasados}/10 PASS • ${suite.porcentajeAprobado.toFixed(1)}% APROBADO</span>`;
+}
   });
 }
