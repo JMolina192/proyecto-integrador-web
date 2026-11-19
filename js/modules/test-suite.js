@@ -208,11 +208,13 @@ export function ejecutarSuiteCompleta() {
   const total = resultados.length;
   const pasados = resultados.filter(r => r.pass).length;
   const fallados = total - pasados;
+    const porcentajeAprobado = total > 0 ? (pasados / total) * 100 : 0;
 
   return {
     total,
     pasados,
     fallados,
+    porcentajeAprobado,
     todosAprobados: fallados === 0,
     resultados
   };
