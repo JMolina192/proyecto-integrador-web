@@ -114,10 +114,7 @@ export function validarNumeroPositivo(numero) {
   return true;
 }
 
-  }
 
-  return divisores.sort((a, b) => a - b);
-}
 
 /**
  * Reto adicional: calcular partidos de un torneo.
